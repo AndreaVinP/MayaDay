@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¡Feliz Día de la Madre!</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      text-align: center;
+      padding: 50px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+    h1 {
+      color: #d63384;
+    }
+    button {
+      margin: 20px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .gift1 {
+      background-color: #39b7ed;
+      color: white;
+    }
+    .gift2 {
+      background-color: #67f57c;
+      color: white;
+    }
+    .gift1:hover {
+      background-color: #2ba6d5;
+    }
+    .gift2:hover {
+      background-color: #56e06c;
+    }
+    #result {
+      margin-top: 30px;
+      font-size: 25px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h1>¡Feliz Día de la Madre, Mamita!</h1>
+  <p>¡Te mereces lo mejor! Elige un regalo:</p>
+  <button class="gift1" onclick="chooseGift('🎁 Un bono para KOAJ')">🎽 Pinta nueva</button>
+  <button class="gift2" onclick="chooseGift('💵 Dinero en efectivo')">💸 Money moneeeey</button>
+  <div id="result"></div>
+</div>
+
+<script>
+  function chooseGift(gift) {
+    document.getElementById('result').innerText = `Elegiste: ${gift}. ¡Espero que lo disfrutes! ¡Te quiero mucho! ❤️`;
+  }
+</script>
+
+</body>
+</html>
